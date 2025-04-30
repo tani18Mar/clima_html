@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de clima</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="title">Buscador de clima</h1>
+    <div class="container">
+        <form class="form" method="post">
+            <div class="field">
+                <label for="city">Ciudad</label>
+                <input
+                id="city"
+                name="city"
+                type="text"
+                placeholder="Ciudad"
+                />
+            </div>
+
+            <div class="field">
+                <label for="country">Pais</label>
+                <select id="country" name="country">
+                    <option value="">-- Seleccione un pais --</option>
+                    <option value="US">Estados Unidos</option>
+                    <option value="MX">Mexico</option>
+                    <option value="AR">Argentina</option>
+                    <option value="CO">Colombia</option>
+                    <option value="ES">Españas</option>
+                </select>
+            </div>
+            <input class="submit" type="submit" value="Consultar Clima"/>
+        </form>
+        <div class="weather-card">
+            <h2>Clima de Ciudad de Ejemplo</h2>
+            <p class="current">25°C</p>
+            <div class="temperatures">
+                <p>Min: <span>18°C</span></p>
+                <p>Max: <span>28°C</span></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
